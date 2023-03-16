@@ -41,7 +41,7 @@ function updateFilters() {
     if (elementValue) {
       filters[filterId] = elementValue;
     }
-      else {
+    else {
       delete filters[filterId];
     };
    
