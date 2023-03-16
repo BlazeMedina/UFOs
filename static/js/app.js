@@ -40,6 +40,8 @@ function updateFilters() {
     // to the filters list. Otherwise, clear that filter from the filters object.
     if (elementValue) {
       filters[filterId] = elementValue;
+      // suggested improvement to eliminate case sensitivity would be to replace line 42
+      // with  filters[filterId] = elementValue.toLowerCase();
     }
     else {
       delete filters[filterId];
